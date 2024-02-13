@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-
+import './globals.css'
 import { ClientSideSuspense } from "@liveblocks/react";
 import { RoomProvider } from "@/liveblocks.config";
 
