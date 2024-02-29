@@ -60,7 +60,7 @@ const CursorChat = ({ cursor, cursorState, setCursorState, updateMyPresence }: C
             window.removeEventListener('keydown', onKeyDown);
         }
 
-    }, [updateMyPresence]);
+    }, [updateMyPresence, setCursorState]);
 
 
     return (
