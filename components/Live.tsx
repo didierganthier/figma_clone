@@ -109,14 +109,14 @@ const Live = () => {
         >
             <h1 className="text-4xl text-white">Liveblocks Figma Clone</h1>
 
-            {/* {cursor && (
+            {cursor && (
                 <CursorChat
                     cursor={cursor}
                     cursorState={cursorState}
                     setCursorState={setCursorState}
                     updateMyPresence={updateMyPresence}
                 />
-            )} */}
+            )}
 
             {cursorState.mode === CursorMode.ReactionSelector && (
                 <ReactionSelector
