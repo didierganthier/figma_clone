@@ -18,6 +18,8 @@ const Live = () => {
 
     const [reaction, setReaction] = useState<Reaction[]>([]);
 
+    const broadcast = useBroadcastEvent();
+
     useInterval(() => {
         if (cursorState.mode === CursorMode.Reaction && cursorState.isPressed && cursor) {
             setReaction((reactions) => reactions.concat([
@@ -27,6 +29,12 @@ const Live = () => {
                     timestamp: Date.now(),
                 }
             ]));
+
+            broadcast({
+                x: cursor.x,
+                y: cursor.y,
+                value: cursorState.reaction,
+            });
         }
     }, 100);
 
