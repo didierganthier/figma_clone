@@ -145,7 +145,7 @@ const Live = () => {
             onPointerUp={handlePointerUp}
             className="h-[100vh] w-full flex justify-center items-center text-center border-2 border-green-500"
         >
-            <h1 className="text-4xl text-white">Liveblocks Figma Clone</h1>
+            <canvas />
 
             {reaction.map((reaction, index) => (
                 <FlyingReaction
